@@ -52,6 +52,14 @@ JAVA를 실행하려면 JRE가 필요하듯이 서블릿을 실행하려면 WAS�
 
 ## GET
 
+GET은 데이터를 조회하기 위한 요청으로, 데이터를 추가하거나 갱신할 수 없다.
+
+DB의 SELECT 쿼리와 동일한 역할이다.
+
+GET 요청 URL 뒤에 ?를 붙이고 변수=값을 추가해서 조회를 요청한다.
+
+<br>
+
 서블릿은 doGet 메서드로 GET 요청을 응답할 수 있다.
 
 doGet 메서드는 HttpServletRequest 클래스의 인스턴스 request로 요청을 받고, HttpServlerResponse 클래스의 인스턴스 response로 응답할 수 있다.
@@ -59,6 +67,12 @@ doGet 메서드는 HttpServletRequest 클래스의 인스턴스 request로 요�
 <br>
 
 ## POST
+
+POST는 데이터를 추가하거나 갱신하는데 사용한다.
+
+GET은 URL뒤에 파라미터 정보가 추가되지만, POST는 Http Request Body에 파라미터 정보가 추가된다.
+
+<br>
 
 서블릿은 doPost 메서드로 POST 요청을 응답할 수 있다.
 
